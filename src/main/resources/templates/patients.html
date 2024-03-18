@@ -43,6 +43,12 @@
                                     <i class="bi bi-trash"></i>
                                 </a>
                             </td>
+                            <td>
+                                <a class="btn btn-info"
+                                   th:href="@{editPatient(id=${patient.id}, keyword=${keyword}, page=${currentPage})}">
+                                    <i class="bi bi-pen"></i>
+                                </a>
+                            </td>
                         </tr>
                         </thead>
                     </table>

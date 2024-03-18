@@ -14,6 +14,11 @@
         <div class="col-md-6 offset-3">
             <form th:action="@{save}" method="post">
                 <div>
+                    <label for="id">ID:</label>
+                    <input class="form-control" type="text" name="id" id="id" th:value="${patient.id}">
+                    <span class="text-danger" th:errors="${patient.id}"></span>
+                </div>
+                <div>
                     <label for="nom">Nom:</label>
                     <input class="form-control" type="text" name="nom" id="nom" th:value="${patient.nom}">
                     <span class="text-danger" th:errors="${patient.nom}"></span>
