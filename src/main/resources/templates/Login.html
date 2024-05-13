@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="px-lg-1">
+
+
+<form th:action="@{/login}" method="post">
+    <div class="form-outline mb-4">
+        <input class="form-control" id="username" type="text" name="username"/>
+        <label class="form-label" for="username">Email address</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input class="form-control" id="password" type="password" name="password"/>
+        <label class="form-label" for="password">Password</label>
+    </div>
+
+
+    <button class="btn btn-primary btn-block mb-4" type="submit">Login</button>
+</form>
+</div>
+</body>
+</html>
